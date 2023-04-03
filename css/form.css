@@ -1,0 +1,218 @@
+.form{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 102;
+}
+.login-form,
+.sign-up-form{
+    width:420px;
+    padding: 30px 10px;
+    background-color: #4d4646;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+ 
+}
+.login-form,
+.sign-up-form{
+    padding-top: 50px;
+}
+.login-form form,
+.sign-up-form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.login-form strong,
+.sign-up-form strong{
+    color: white;
+    font-size: 30px;
+    margin: 5px 7px 7px 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    border:none;
+    background-color: #fc4545;
+    border-radius: 50px;
+    padding: 1px 50px;
+}
+.login-form input,
+.sign-up-form input{
+    width:90%;
+    height: 45px;
+    margin: 6px 0px;
+    padding: 0px 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    outline: none;
+    border-radius: 7px;
+}
+.login-form input::placeholder,
+.sign-up-form input::placeholder{
+    color: rgba(0,0,0,0.5);
+}
+.login-form input[type="submit"],
+.sign-up-form input[type="submit"]{
+    background-color: white;
+    color: #fd3030;
+    width: 150px;
+    border: none;
+    outline: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+.login-form input[type="submit"]:hover,
+.sign-up-form input[type="submit"]:hover{
+    background-color: #fd3030;
+    color: white;
+}
+.form-btns{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.form-btns a{
+    color: white;
+    font-size: 0.9rem;
+}
+.sign-up-btn{
+    border-bottom: 1px solid #868686;
+    line-height: 16px;
+}
+.sign-up-btn:hover{
+    text-decoration: none;
+    color: #ff4e4e;
+    border-bottom: 1px solid #fd3030;
+}
+.form-btns .already-account:hover{
+    text-decoration: none;
+    color: #ff4e4e;
+}
+.form-cancel{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: white;
+}
+.login-form,
+.sign-up-form,
+.form{
+    display: none;
+}
+.login-active,
+.login-active .login-form{
+    display: flex;
+    animation: fade 0.3s;
+}
+ 
+.sign-up-active,
+.sign-up-active .sign-up-form{
+    display: flex;
+    animation: fade 0.3s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*---------review box---------------*/
+
+.rev{
+    margin: 0;
+    padding: 0;
+}
+.testimonials{
+    margin: 50px auto;
+}
+.testimonials h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive,'Comic Sans MS';
+    color: #fd3030;
+    /* color: #ff9800; */
+    padding-bottom: 10px;text-transform: uppercase;
+}
+.testimonials h1::after{
+    content: '';
+    /* background: #ff9800; */
+    background: #fd3030;
+    display: block;height: 3px;width: 170px;
+    margin: 20px auto 5px;
+}
+.testimonials .row{
+    margin-top: 30px;
+}
+.col-md-4{
+    margin: 40px auto;
+}
+.profile{
+    padding: 70px 10px 10px;background-color: #ffffff;
+}
+.profile img{
+    top: -60px;
+    position: absolute;
+    left: calc(50% - 60px);border: 10px solid white;
+}
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile h3{
+    font-size: 20px;margin-top: 15px;
+    color: #fd3030;
+    /* color: #ff9800; */
+}
+span{
+    font-size: 12px;
+    color: #333;
+}
+blockquote{
+    font-size: 16px;line-height: 30px;
+}
+blockquote::before{
+    content: '\275D';
+    font-size: 50px;
+    position: relative;
+    color: #fd3030;
+    /* color: #ff9800; */
+    line-height: 20px;bottom: -15px;
+    right: 5px;
+
+}
+blockquote::after{
+    content: '\275E';
+    font-size: 50px;
+    position: relative;
+    color: #fd3030;
+    /* color: #ff9800; */
+    line-height: 10px;bottom: -15px;
+    left: 5px;
+}
+.profile:hover{
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}

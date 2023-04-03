@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+#feedbackDrawer{
+	color:white;
+	background: #ff4545;
+	border-right: none;
+	font-family: 'PT Sans', sans-serif;
+	height: auto;
+	min-height: 175px;
+	position: fixed;
+	right: -308px;
+	top: 100px;
+	width: 300px;
+	z-index: 100000;
+
+	/*	position transition for slide*/
+	-webkit-transition: right 0.5s ease;
+	-moz-transition: right 0.5s ease;
+	-o-transition: right 0.5s ease;
+	transition: right 0.5s ease;
+}
+#feedbackDrawer h2{font-size: 26px; margin: 2px 0px;}
+#feedbackDrawer.showDrawer{right: 0px;}
+#feedbackDrawer.loading{background: #ff4545 url(images/loading.gif) no-repeat center center;}
+#feedbackDrawer.isie{outline: 1px solid #ff4545;}
+#feedbackForm{
+	padding: 16px;
+}
+#feedbackForm .field{
+	padding:5px;
+	border: 2px solid black;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	color: white;
+	display: inline-block;
+	font-size: 13px;
+	font-family: 'PT Sans', sans-serif;
+	line-height: 18px;
+	padding: 4px;
+	width: 260px;
+}
+#feedbackForm .field.error{border-color: black; border: solid 2px rgba(256,0,0,0.5);}
+#feedbackDrawer #feedbackForm label.error{display: none}
+#feedbackDrawer.showDrawer #feedbackForm label.error{
+	display: block;
+	position: absolute;
+	right: 295px;
+	z-index: 2000;
+	margin-top: .2em;
+	background: #ff4545;
+	padding: .5em;
+	border: .2em solid black;
+	border-color: rgba(256, 0, 0, 0.5);
+	white-space: nowrap;
+	min-width: 245px;
+	text-align: center;
+	box-shadow: 0 6px 2px -4px rgba(0, 0, 0, 0.2);
+}
+#feedbackDrawer.showDrawer #feedbackForm label.error:before,
+#feedbackDrawer.showDrawer #feedbackForm label.error:after{
+	content: "";
+	position: absolute;
+	z-index: 2001;
+	border: transparent 10px solid;
+	border-right: 0;
+	border-left-color: black;
+	right: -.7em;
+	top: .3em;
+}
+#feedbackDrawer.showDrawer #feedbackForm label.error:before{
+	border-left-color: black;
+	border-left-color: rgba(256,0,0,0.4);
+	right: -0.9em;
+}
+#feedbackForm select.field{width:270px;}
+#feedbackForm div{
+	padding: 5px 2px;
+	font-size: 14px;
+}
+#feedbackSuccess, #feedbackError{
+	display: none;
+	padding: 30px 16px;
+	text-align: center;
+}
+#feedbackSuccess p, #feedbackError p{font-size: 13px;}
+#feedbackTrigger{
+	padding:5px;
+	background: #ff4545;
+	border: 2px solid rgb(0, 0, 0);
+	border-bottom: none;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 700;
+	position: absolute;
+	padding: 8px 15px 12px;
+	left: -81px;
+	top: 60px;
+
+	/*	button rotation*/
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+	/*	background transition for hover*/
+	-webkit-transition: background 0.5s ease;
+	-moz-transition: background 0.5s ease;
+	-o-transition: background 0.5s ease;
+	transition: background 0.5s ease;
+}
+#feedbackTrigger:hover{
+	background: #ff4545;
+	text-decoration: none;
+}
+#feedbackTrigger span{
+	display: block;
+	position: absolute;
+	left: 50px;
+	/* Rotation */
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
+}
+.showDrawer #feedbackTrigger{background: #ff4545;}
+.isie #feedbackTrigger{left: -48px;}
+.isie #feedbackTrigger span{display: none;}

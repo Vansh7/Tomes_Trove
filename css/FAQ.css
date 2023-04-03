@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+body{
+    font-family: 'Baloo Bhaina 2', cursive;
+    background-color: #eee;
+}
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    /* margin: 0 auto; */
+    margin-top: 100px;
+}
+.container-fluid h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(252, 250, 251);
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.container-fluid h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    width: 67px;
+    height: 2px;
+    background-color: rgb(247, 46, 46);
+}
+.accordion{
+    width: 100%;
+    padding: 0 5px;
+    
+    cursor: pointer;
+    
+    margin: 10px 0;
+    align-items: center;
+}
+.accordion .icon{
+    /* margin: 0 10px 0 20px; */
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    transition: all .5s ease-in;
+}
+.icon{
+    font-size: 30px;
+    padding: 5px;
+    color: #fff;
+}
+.accordion h5{
+    font-size: 25px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #fff;
+    transition: all .5s ease-in;
+}
+/* .active .icon{
+    background: url(images/toggle-bg.png) no-repeat 8px -25px #fff;
+} */
+.active .icon{
+   
+    color: rgb(247, 46, 46);
+}
+.active h5{
+    color: rgb(247, 46, 46);
+}
+.panel{
+    padding: 0 15px;
+    border-left: 1px solid rgb(247, 46, 46);
+    color: #fff;
+    margin-left: 25px;
+    font-size: 23px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+}
+.dox{
+    margin: 10px 0px;
+}
+
