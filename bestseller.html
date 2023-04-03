@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, intial-scale=1.0" name="viewport">
+        <title>TomesTrove | Online Books Store</title>
+        <link rel="shortcut icon" href="images/fav-icon3.png"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/ani.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <nav style="position: fixed;">
+            <!--menu-bar----------------------------------------->
+            <div class="navigation">
+                <!--logo------------>
+                <a href="index.html" class="logo"><img src="images/logo.png"></a>
+                <!--menu-icon------------->
+                <div class="toggle"></div>
+                <!--menu----------------->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li  class="shop"><a href="about.html" >About Us</a></li>
+                    <li><a href="bestseller.html">Bestsellers</a>
+                        <!--lable---->
+                        <span class="sale-lable">Sale</span>
+                    </li>
+                    <li><a href="scbook.html">School Books</a></li>
+                    <li id="exam" class="dropdown"><a href="#">Exam Special&nbsp;<i class="fa fa-caret-down"></i><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="neet.html">NEET</a></li>
+                            <li><a href="jee.html">JEE</a></li>
+                            <li><a href="upsc.html">UPSC</a></li>
+                            <li><a href="nda.html">NDA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--right-menu----------->
+                <div class="right-menu">
+                    <a href="javascript:void(0);" class="search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="javascript:void(0);" class="user">
+                        <i class="far fa-user"></i>
+                    </a>
+                    <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart ">
+                        </i>
+                    </a>
+                </div>
+                </div>
+            </nav>
+            <div class="search-bar">
+    
+                <!--search-input------->
+                <div class="search-input">
+                <input type="text" placeholder="Search For Product" name="search" />
+                <!--cancel-btn--->
+                <a href="javascript:void(0);" class="search-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+            </div>
+            <div class="form">
+                <!--login---------->
+                <div class="login-form">
+                    <!--cancel-btn---------------->
+                    <a href="javascript:void(0);" class="form-cancel">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <strong>Log In</strong>
+                    <!--inputs-->
+                    <form>
+                        <input type="email" name="email" placeholder="Example@gmail.com" required/>
+                        <input type="password" name="password" placeholder="Password" required/>
+                        <input type="submit" value="Log In"/>
+                    </form>
+                    <!--forget-and-sign-up-btn-->
+                    <div class="form-btns">
+                        <a href="#" class="forget">Forget Your Password?</a>
+                        <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+                    </div>
+                </div>
+                    <!--Sign-up---------->
+                    <div class="sign-up-form">
+                        <!--cancel-btn---------------->
+                    <a href="javascript:void(0);" class="form-cancel">
+                        <i class="fas fa-times"></i>
+                    </a>
+                        <strong>Sign Up</strong>
+                        <!--inputs-->
+                        <form>
+                            <input type="text" name="fullname" placeholder="Full Name" required/>
+                            <input type="email" name="email" placeholder="Example@gmail.com" required/>
+                            <input type="password" name="password" placeholder="Password" required/>
+                            <input type="submit" value="Sign Up"/>
+                        </form>
+                        <!--forget-and-sign-up-btn-->
+                        <div class="form-btns">
+                            <a href="javascript:void(0);" class="already-account">
+                                Already Have Account?</a>
+                        </div>
+                    </div>
+            </div>
+	 <section id="Best Sellers">
+                <div class="best-sellers">
+                    <strong class="scbook">Best Sellers</strong>
+                    <p>We Provide You The Lastest Editions</p>
+                </div>
+                <div class="best-product">
+                    <div class="book1"><img src="images/bs1.jpeg" alt="book"><div class="price"><div><b>A Promise Land<br>⭐⭐⭐⭐ ✰</b><br><span class="rate"><b>₹ 1299</b></span><del class="cut">₹ 1999</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book2"><img src="images/bs2.jpeg" alt="book"><div class="price"><div><b>Ruskin Bond<br>⭐⭐⭐⭐ ✰</b><br><span class="rate"><b>₹ 125</b></span><del class="cut">₹ 249</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book3"><img src="images/bs3.jpeg" alt="book"><div class="price"><div><b>The Psychology of Money<br>⭐⭐⭐⭐ ✰</b><br><span class="rate"><b>₹ 225</b></span><del class="cut">₹ 399</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book4"><img src="images/bs4.jpeg" alt="book"><div class="price"><div><b>Black Book of English<br>⭐⭐⭐⭐⭐</b><br><span class="rate"><b>₹ 224</b></span><del class="cut">₹ 319</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book5"><img src="images/bs5.jpeg" alt="book"><div class="price"><div><b>General Knowledge<br>⭐⭐⭐ ✰ ✰</b><br><span class="rate"><b>₹ 156</b></span><del class="cut">₹ 299</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book6"><img src="images/bs6.jpeg" alt="book"><div class="price"><div><b>The War That Made R&AW<br>⭐⭐⭐⭐⭐</b><br><span class="rate"><b>₹ 499</b></span><del class="cut">₹ 999</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+					<div class="book1"><img src="images/bs7.jpeg" alt="book"><div class="price"><div><b>Think Like a Monk<br>⭐⭐⭐⭐ ✰</b><br><span class="rate"><b>₹ 1000</b></span><del class="cut">₹ 1999</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book2"><img src="images/bs8.jpeg" alt="book"><div class="price"><div><b>Grandma's Bag of Stories<br>⭐⭐⭐ ✰ ✰</b><br><span class="rate"><b>₹ 559</b></span><del class="cut">₹ 700</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book3"><img src="images/bs9.jpeg" alt="book"><div class="price"><div><b>The Intelligent Investors<br>⭐⭐⭐⭐⭐</b><br><span class="rate"><b>₹ 105</b></span><del class="cut">₹ 250</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                </div>
+                <div class="box">
+                    <span style="--i:1;"><img src="https://m.media-amazon.com/images/M/MV5BNjQ3NWNlNmQtMTE5ZS00MDdmLTlkZjUtZTBlM2UxMGFiMTU3XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UY1200_CR90,0,630,1200_AL_.jpg"  ></span>
+                    <span style="--i:2;"><img src="https://i.guim.co.uk/img/media/9a19fedf27882429f0287ecf5ea24b0e5c582c3f/0_0_2359_3543/master/2359.jpg?width=700&quality=85&auto=format&fit=max&s=36e63d6a1c5bd5cd7df286ab4fe8d011" ></span>
+                    <span style="--i:3;"><img src="https://i.pinimg.com/originals/5f/c3/9e/5fc39ee5d7b13bf90028523bea86d6bf.jpg" ></span>
+                    <span style="--i:4;"><img src="https://i.guim.co.uk/img/media/f240646abc74169ca57777103a797d9a9f2b9f09/0_0_2359_3543/master/2359.jpg?width=300&quality=85&auto=format&fit=max&s=b6140aa592ab5b2ed48919a534b5f046" ></span>
+                    <span style="--i:5;"><img src="https://i.guim.co.uk/img/media/a982a6b00359d9aedc145c4ae69d57f80ef2dde1/0_0_2359_3543/master/2359.jpg?width=700&quality=85&auto=format&fit=max&s=528ebf566699fbdbc52cf8c1e0580df8" ></span>
+                    <span style="--i:6;"><img src="https://i.guim.co.uk/img/media/a445392b08f934fb517dcae17a7c1f58cd1885c3/0_0_1660_2493/master/1660.jpg?width=700&quality=85&auto=format&fit=max&s=f3043efa7373598a6c69ba1eae3fae4e" ></span>
+                    <span style="--i:7;"><img src="https://kottke.org/plus/misc/images/olly-moss-potter-01.jpg" ></span>
+                    <span style="--i:8;"><img src="https://i.guim.co.uk/img/media/6dce1620702e3643ef96313848f6fe19c2ca1052/0_0_2359_3543/master/2359.jpg?width=700&quality=85&auto=format&fit=max&s=a72a5100efce4e3304bff09bc65c58c5" ></span>  
+                 </div>
+                <div class="best-product">
+                    <div class="book4"><img src="images/bs10.jpeg" alt="book"><div class="price"><div><b>Sapiens: A Brief History Of Humankind<br>⭐⭐⭐ ✰ ✰</b><br><span class="rate"><b>₹ 399</b></span><del class="cut">₹ 699</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book5"><img src="images/bs11.jpeg" alt="book"><div class="price"><div><b>Adiyogi : The Source of Yoga<br>⭐⭐⭐⭐⭐</b><br><span class="rate"><b>₹ 179</b></span><del class="cut">₹ 299</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book6"><img src="images/bs12.jpeg" alt="book"><div class="price"><div><b>The Girl in Room 105<br>⭐⭐⭐⭐⭐</b><br><span class="rate"><b>₹ 129</b></span><del class="cut">₹ 199</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+					<div class="book1"><img src="images/bs13.jpeg" alt="book"><div class="price"><div><b>Making India Awesome: New Essays and Columns<br>⭐⭐⭐⭐ ✰</b><br><span class="rate"><b>₹ 110</b></span><del class="cut">₹ 195</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book2"><img src="images/bs14.jpeg" alt="book"><div class="price"><div><b>What Young India Wants<br>⭐⭐⭐⭐⭐</b><br><span class="rate"><b>₹ 125</b></span><del class="cut">₹ 200</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book3"><img src="images/bs15.jpeg" alt="book"><div class="price"><div><b>Stories At Work: Unlock the Secret to Business Storytelling<br>⭐⭐⭐⭐ ✰</b><br><span class="rate"><b>₹ 225</b></span><del class="cut">₹ 399</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book4"><img src="images/bs16.jpeg" alt="book"><div class="price"><div><b>The Art of War<br>⭐⭐⭐⭐⭐</b><br><span class="rate"><b>₹ 67</b></span><del class="cut">₹ 99</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book5"><img src="images/bs17.jpeg" alt="book"><div class="price"><div><b>Murder on the Orient Express<br>⭐⭐⭐⭐⭐</b><br><span class="rate"><b>₹ 191</b></span><del class="cut">₹ 299</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                    <div class="book6"><img src="images/bs18.jpeg" alt="book"><div class="price"><div><b>Ram - Scion of Ikshvaku (Ram Chandra Book 1)<br>⭐⭐⭐ ✰ ✰</b><br><span class="rate"><b>₹ 248</b></span><del class="cut">₹ 450</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1"><a class="paygate" href="payment.html">Buy Now</a></button></div></div></div>
+                </div>
+            </section>
+            <div class="select"><a href="payment.html" style="text-decoration: none;display: flex;justify-content: center;top: 5px;"><button class="cart-btn">Proceed to Buy</button></a></div>
+            <footer id="footer" >
+                <div class="container">
+                      <div class="sec aboutus">
+                         <h2>About Us</h2>
+                         <p>The website is based on online shopping where customer can order 
+                         and make a payment of book via internet. Moreover it will able to
+                          save customer data and use it to determine what kind of books are 
+                          in zone of interest of specified customer and display a
+                           books according to customer interest.</p>
+                            <ul class="sci">
+                      <li><a href="#" id="redirect"><i class="fab fa-facebook"></i></a></li>
+                      <li><a href="#" id="redirect2"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#" id="redirect3"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#" id="redirect4"><i class="fab fa-youtube"></i></a></li>
+                      </ul>
+                      </div>
+                      <div class="sec quickLinks">
+                      <h2>Quick Links</h2>
+                      <ul>
+                             <li><a href="about.html">About</a></li>
+                             <li><a href="priv.html" class="faq">FAQ</a></li>
+                             <li><a href="priv.html">Privacy Policy</a></li>
+                             <li><a href="#">Help</a></li>
+                             <li><a href="terms_test.html">Terms & Conditions</a></li>
+                             <li><a href="#footer">Contact</a></li>
+                      </ul>
+                      </div>
+                      <script>
+                          document.querySelector("#redirect")
+                              .addEventListener('click',()=>{
+                              window.location.href="https://www.facebook.com/"
+                          });
+                          document.querySelector("#redirect2")
+                               .addEventListener('click',()=>{
+                               window.location.href="https://www.twitter.com/"
+                          });
+                          document.querySelector("#redirect3")
+                               .addEventListener('click',()=>{
+                               window.location.href="https://www.instagram.com/"
+                          });
+                          document.querySelector("#redirect4")
+                               .addEventListener('click',()=>{
+                               window.location.href="https://www.youtube.com/"
+                          });
+                      </script>
+                      <div class="sec contact">
+                          <h2>Contact Info</h2>
+                          <ul class="info">
+                             <li>
+                                  <span><i class="fas fa-map-marker-alt"></i></span>
+                                  <span>547 Mayur Vihar<br>
+                                  New Delhi, PA 16325,<br>INDIA</span>
+                             </li>
+                             <li>
+                                  <span><i class="fas fa-phone-square-alt"></i></span>
+                                  <p><a href="tel:12345678900">+1800-234-853</a><br>
+                                  <a href="tel:12345678900">+1800-234-983</a></p>
+                             </li>
+                             <li>
+                                  <span><i class="fas fa-envelope-square"></i></span>
+                                  <p><a href="mailto:tomestroves@gmail.com">tomestroves@gmail.com</a></p>
+                             </li>
+                          </ul>
+                      </div>
+                 </div>
+                </footer>
+                <div id="copyright">© Copyright 2021 - ® All rights reserved by TomesTrove Group™<br>
+                </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            var noti=document.querySelector('.cart');
+            var select=document.querySelector('.select');
+            var button=document.getElementsByTagName('button');
+            for(but of button){
+              but.addEventListener('click',(e)=>{
+                var add=Number(noti.getAttribute('data-count')|| 0);
+                noti.setAttribute('data-count', add+1);
+                noti.classList.add('zero');
+  
+                var parent=e.target.parentNode;
+                var clone=parent.cloneNode(true);
+                select.appendChild(clone);
+                clone.lastElementChild.innerText="Buy now";
+                if (clone) {
+                  noti.onclick =()=>{
+                    select.classList.toggle('display');
+                  }
+                }
+              })
+            }
+          </script>
+          <script> function alrt(){
+            alert("Your book has been added to cart");
+          }
+          </script>
+    </body>
+</html>

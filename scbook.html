@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, intial-scale=1.0" name="viewport">
+        <title>TomesTrove | Online Books Store</title>
+        <link rel="shortcut icon" href="images/fav-icon3.png"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/form.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+    <body class="scbook">
+        <nav style="position: fixed;">
+            <!--menu-bar----------------------------------------->
+            <div class="navigation">
+                <!--logo------------>
+                <a href="index.html" class="logo"><img src="images/logo.png"></a>
+                <!--menu-icon------------->
+                <div class="toggle"></div>
+                <!--menu----------------->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li  class="shop"><a href="about.html" >About Us</a></li>
+                    <li><a href="bestseller.html">Bestsellers</a>
+                        <!--lable---->
+                        <span class="sale-lable">Sale</span>
+                    </li>
+                    <li><a href="scbook.html">School Books</a></li>
+                    <li id="exam" class="dropdown"><a href="#">Exam Special&nbsp;<i class="fa fa-caret-down"></i><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="neet.html">NEET</a></li>
+                            <li><a href="jee.html">JEE</a></li>
+                            <li><a href="upsc.html">UPSC</a></li>
+                            <li><a href="nda.html">NDA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--right-menu----------->
+                <div class="right-menu">
+                    <a href="javascript:void(0);" class="search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="javascript:void(0);" class="user">
+                        <i class="far fa-user"></i>
+                    </a>
+                    <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart ">
+                        </i>
+                    </a>
+                </div>
+                </div>
+            </nav>
+            <div class="search-bar">
+    
+                <!--search-input------->
+                <div class="search-input">
+                <input type="text" placeholder="Search For Product" name="search" />
+                <!--cancel-btn--->
+                <a href="javascript:void(0);" class="search-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+            </div>
+            <div class="form">
+                <!--login---------->
+                <div class="login-form">
+                    <!--cancel-btn---------------->
+                    <a href="javascript:void(0);" class="form-cancel">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <strong>Log In</strong>
+                    <!--inputs-->
+                    <form>
+                        <input type="email" name="email" placeholder="Example@gmail.com" required/>
+                        <input type="password" name="password" placeholder="Password" required/>
+                        <input type="submit" value="Log In"/>
+                    </form>
+                    <!--forget-and-sign-up-btn-->
+                    <div class="form-btns">
+                        <a href="#" class="forget">Forget Your Password?</a>
+                        <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+                    </div>
+                </div>
+                    <!--Sign-up---------->
+                    <div class="sign-up-form">
+                        <!--cancel-btn---------------->
+                    <a href="javascript:void(0);" class="form-cancel">
+                        <i class="fas fa-times"></i>
+                    </a>
+                        <strong>Sign Up</strong>
+                        <!--inputs-->
+                        <form>
+                            <input type="text" name="fullname" placeholder="Full Name" required/>
+                            <input type="email" name="email" placeholder="Example@gmail.com" required/>
+                            <input type="password" name="password" placeholder="Password" required/>
+                            <input type="submit" value="Sign Up"/>
+                        </form>
+                        <!--forget-and-sign-up-btn-->
+                        <div class="form-btns">
+                            <a href="javascript:void(0);" class="already-account">
+                                Already Have Account?</a>
+                        </div>
+                    </div>
+            </div>
+            <section class="School Books">
+                <div class="best-sellers">
+                    <strong class="scbook">School Books</strong>
+                    <p>We Provide You The Best</p>
+                </div>
+                <div class="best-product">
+                    <div class="book6"><img src="images/sc6.jpeg" alt="book"><div class="price"><div><b>T.S. Grewal's Analysis Of Financial Statement<br>⭐⭐⭐⭐⭐</b><br><span class="rate"><b>₹ 432</b></span><del class="cut">₹ 480</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1">Buy Now</button></div></div></div>
+                    <div class="book1"><img src="images/sc1.jpeg" alt="book"><div class="price"><div><b>Science Textbook For Class-VII<br>⭐⭐⭐⭐ ✰</b><br><span class="rate"><b>₹ 65</b></span><del class="cut">₹ 99</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1">Buy Now</button></div></div></div>
+                    <div class="book4"><img src="images/sc7.jpeg" alt="book"><div class="price"><div><b>XamIdea Mathematics for class-XII<br>⭐⭐⭐⭐ ✰</b><br><span class="rate"><b>₹ 466</b></span><del class="cut">₹ 636</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1">Buy Now</button></div></div></div>
+                    <div class="book2"><img src="images/sc8.jpeg" alt="book"><div class="price"><div><b>T.S. Grewal's Double Entry for Class-XII<br>⭐⭐⭐ ✰ ✰</b><br><span class="rate"><b>₹ 427</b></span><del class="cut">₹ 475</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1">Buy Now</button></div></div></div>
+                    <div class="book3"><img src="images/sc9.jpeg" alt="book"><div class="price"><div><b>Active Teach: Longman<br>⭐⭐⭐⭐⭐</b><br><span class="rate"><b>₹ 445</b></span><del class="cut">₹ 495</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1">Buy Now</button></div></div></div>
+                    <div class="book5"><img src="images/sc5.jpeg" alt="book"><div class="price"><div><b>High School Grammer<br>⭐⭐⭐⭐ ✰</b><br><span class="rate"><b>₹ 294</b></span><del class="cut">₹ 420</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1">Buy Now</button></div></div></div>
+                </div>
+                <div><a href="#" style="text-decoration: none;"><img src="images/banr3.png"  style="width: 100%;height: 400px; "></a></div>
+                <div class="best-product">
+                    <div class="book6"><img src="images/sc10.jpeg" alt="book"><div class="price"><div><b>Vasant Bhag-2 Textbook for class-VII<br>⭐⭐⭐⭐ ✰</b><br><span class="rate"><b>₹ 65</b></span><del class="cut">₹ 80</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1">Buy Now</button></div></div></div>
+                    <div class="book1"><img src="images/sc11.jpeg" alt="book"><div class="price"><div><b>Our Pasts-II Textbook for Class-VII<br>⭐⭐⭐⭐⭐</b><br><span class="rate"><b>₹ 65</b></span><del class="cut">₹ 99</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1">Buy Now</button></div></div></div>
+                    <div class="book4"><img src="images/sc12.jpeg" alt="book"><div class="price"><div><b>Science NCERT Textbook for class-VIII<br>⭐⭐⭐⭐ ✰</b><br><span class="rate"><b>₹ 69</b></span><del class="cut">₹ 95</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1">Buy Now</button></div></div></div>
+                    <div class="book2"><img src="images/sc13.jpeg" alt="book"><div class="price"><div><b>Mathematics Textbook for Class-IX<br>⭐⭐⭐⭐ ✰</b><br><span class="rate"><b>₹ 149</b></span><del class="cut">₹ 199</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1">Buy Now</button></div></div></div>
+                    <div class="book3"><img src="images/sc14.jpeg" alt="book"><div class="price"><div><b>Social and Political Life Part-III<br>⭐⭐⭐⭐⭐</b><br><span class="rate"><b>₹ 79</b></span><del class="cut">₹ 149</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1">Buy Now</button></div></div></div>
+                    <div class="book5"><img src="images/sc15.jpeg" alt="book"><div class="price"><div><b>Olympiad Value Pack for Class-III<br>⭐⭐⭐⭐ ✰</b><br><span class="rate"><b>₹ 435</b></span><del class="cut">₹ 777</del><br><button type="button" class="btn" onclick="alrt()">Add to Cart</button><button type="button" class="btn" id="btn1">Buy Now</button></div></div></div>
+                </div>
+            </section>
+            <div class="select"><a href="payment.html" style="text-decoration: none;display: flex;justify-content: center;top: 5px;"><button class="cart-btn">Proceed to Buy</button></a></div>
+
+            <div><a href="#" style="text-decoration: none;"><img src="images/banr.png"  style="width: 100%;height: 350px; "></a></div>
+            <footer id="footer">
+                <div class="container">
+                      <div class="sec aboutus">
+                         <h2>About Us</h2>
+                         <p>The website is based on online shopping where customer can order 
+                         and make a payment of book via internet. Moreover it will able to
+                          save customer data and use it to determine what kind of books are 
+                          in zone of interest of specified customer and display a
+                           books according to customer interest.</p>
+                            <ul class="sci">
+                      <li><a href="#" id="redirect"><i class="fab fa-facebook"></i></a></li>
+                      <li><a href="#" id="redirect2"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#" id="redirect3"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#" id="redirect4"><i class="fab fa-youtube"></i></a></li>
+                      </ul>
+                      </div>
+                      <div class="sec quickLinks">
+                      <h2>Quick Links</h2>
+                      <ul>
+                             <li><a href="about.html">About</a></li>
+                             <li><a href="priv.html" class="faq">FAQ</a></li>
+                             <li><a href="priv.html">Privacy Policy</a></li>
+                             <li><a href="#">Help</a></li>
+                             <li><a href="terms_test.html">Terms & Conditions</a></li>
+                             <li><a href="#footer">Contact</a></li>
+                      </ul>
+                      </div>
+                      <script>
+                          document.querySelector("#redirect")
+                              .addEventListener('click',()=>{
+                              window.location.href="https://www.facebook.com/"
+                          });
+                          document.querySelector("#redirect2")
+                               .addEventListener('click',()=>{
+                               window.location.href="https://www.twitter.com/"
+                          });
+                          document.querySelector("#redirect3")
+                               .addEventListener('click',()=>{
+                               window.location.href="https://www.instagram.com/"
+                          });
+                          document.querySelector("#redirect4")
+                               .addEventListener('click',()=>{
+                               window.location.href="https://www.youtube.com/"
+                          });
+                      </script>
+                      <div class="sec contact">
+                          <h2>Contact Info</h2>
+                          <ul class="info">
+                             <li>
+                                  <span><i class="fas fa-map-marker-alt"></i></span>
+                                  <span>547 Mayur Vihar<br>
+                                  New Delhi, PA 16325,<br>INDIA</span>
+                             </li>
+                             <li>
+                                  <span><i class="fas fa-phone-square-alt"></i></span>
+                                  <p><a href="tel:12345678900">+1800-234-853</a><br>
+                                  <a href="tel:12345678900">+1800-234-983</a></p>
+                             </li>
+                             <li>
+                                  <span><i class="fas fa-envelope-square"></i></span>
+                                  <p><a href="mailto:tomestroves@gmail.com">tomestroves@gmail.com</a></p>
+                             </li>
+                          </ul>
+                      </div>
+                 </div>
+                </footer>
+            <div id="copyright">© Copyright 2021 - ® All rights reserved by TomesTrove Group™<br>
+            </div>
+            <script>
+                var noti=document.querySelector('.cart');
+                var select=document.querySelector('.select');
+                var button=document.getElementsByTagName('button');
+                for(but of button){
+                  but.addEventListener('click',(e)=>{
+                    var add=Number(noti.getAttribute('data-count')|| 0);
+                    noti.setAttribute('data-count', add+1);
+                    noti.classList.add('zero');
+      
+                    var parent=e.target.parentNode;
+                    var clone=parent.cloneNode(true);
+                    select.appendChild(clone);
+                    clone.lastElementChild.innerText="Buy now";
+                    if (clone) {
+                      noti.onclick =()=>{
+                        select.classList.toggle('display');
+                      }
+                    }
+                  })
+                }
+              </script>
+              <script> function alrt(){
+                alert("Your book has been added to cart");
+              }
+              </script>
+    </body>
+</html>
